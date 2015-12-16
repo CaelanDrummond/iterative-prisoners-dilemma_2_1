@@ -744,3 +744,5 @@ Alternate 'C' and 'D'
 The string method for the strategy:
 """
         return 'Indecisiveness'
+
+#Goodgame
