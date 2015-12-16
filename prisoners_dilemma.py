@@ -725,3 +725,22 @@ def play_tournament(num_players):
                str(int(scores[player])/num_players) , ' points: ',
                team_names[player])
     
+from axelrod import Player
+
+class IndecisiveBro (Player):
+    """
+A player who alternates between cooperating and defecting
+"""
+    def strategy(self, opponent):
+        """
+Alternate 'C' and 'D'
+"""
+        if self.history[-1] == 'C':
+            return 'D'
+        return 'C'
+
+    def __repr__(self):
+        """
+The string method for the strategy:
+"""
+        return 'Indecisiveness'
