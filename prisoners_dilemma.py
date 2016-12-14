@@ -540,7 +540,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 
 
 
-
+#Caelan Drummond #7
 
 
 
@@ -724,7 +724,7 @@ def play_tournament(num_players):
         print('player ' + str(player) , ': ' , 
                str(int(scores[player])/num_players) , ' points: ',
                team_names[player])
-    
+
 from axelrod import Player
 
 class IndecisiveBro (Player):
